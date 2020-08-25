@@ -8,6 +8,17 @@ export const MENU_ITEMS: NbMenuItem[] = [
     home: true,
   },
   {
+    title: 'mantenedores',
+    icon: 'layout-outline',
+    children: [
+      {
+        title: 'Cargo',
+        link: '/pages/mantenedores',
+      },
+    ]
+  }
+  /*
+  {
     title: 'IoT Dashboard',
     icon: 'home-outline',
     link: '/pages/iot-dashboard',
@@ -243,5 +254,5 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/auth/reset-password',
       },
     ],
-  },
+  },*/
 ];

@@ -69,6 +69,11 @@ const routes: Routes = [{
         .then(m => m.MiscellaneousModule),
     },
     {
+      path: 'mantenedores',
+      loadChildren: () => import('./administracion/mantenedores/mantenedores.module')
+        .then(m => m.MantenedoresModule),
+    },
+    {
       path: '',
       redirectTo: 'dashboard',
       pathMatch: 'full',
